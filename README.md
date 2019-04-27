@@ -1,4 +1,4 @@
-\# meteoClock
+﻿\# meteoClock
 
 Это доработка прошивки AlexGyver под метеостанцию.
 
@@ -104,4 +104,4 @@
 
 согласно схемы.
 
-![Схема](https://github.com/Norovl/MeteoClock/blob/master/screenPhoto/scheme1.jpg)
+![Схема](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/scheme1.jpg)
