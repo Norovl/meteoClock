@@ -1,4 +1,4 @@
-**meteoClock**
+﻿**meteoClock**
 
 Это доработка прошивки AlexGyver под метеостанцию.
 
@@ -75,8 +75,5 @@
     заряда. Так же есть индикатор работы от сети. Необходима доработка схемы –
     см. рисунок ниже.
 
-![Схема](media/af847dfd0a2ce41cc853dfd7232febc9.shtml)
+![Схема](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/scheme1.jpg)
 
-Схема
-
-Схема
