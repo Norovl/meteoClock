@@ -64,16 +64,28 @@
 -   Убрано подтверждение сохранения, теперь сохраняется сразу при удержании
     кнопки на меню «Сохранить»
 
--   Добавлена настройка выбора яркости индикатора (0% - 100%, АВТО) и экрана (0%
-    - 100%, АВТО, но для регулировки экрана необходима доработка схемы под
-    версию 1.5 Алекса).
+![Сохранение настроек](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158Save.jpg)
+
+-   Добавлена настройка выбора яркости индикатора (0% - 100%, АВТО) и экрана 
+    (0% - 100%, АВТО, но для регулировки экрана необходима доработка схемы 
+    под версию 1.5 Алекса).
+
+![Настройка яркости индикатора](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LEDBright.jpg)
+![Настройка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LCDBright.jpg)
+![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LCDBright10.jpg)
 
 -   Добавлена возможность настройки отображения и скрытия графиков при их
     последовательном переборе.
+
+![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158GrafOff.jpg)
+![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158GrafOn.jpg)
 
 -   Добавлена возможность работы от аккумулятора 18650 с индикацией остатка
     заряда. Так же есть индикатор работы от сети. Необходима доработка схемы –
     см. рисунок ниже.
 
-![Схема](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/scheme1.jpg)
+![Работа от батареи](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158battery.jpg)
+![Работа от внешнего источника (сети)](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158DC.jpg)
+
+![Доработка схемы для работы от батареи](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/scheme1.jpg)
 
