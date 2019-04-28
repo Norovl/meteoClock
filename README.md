@@ -12,6 +12,8 @@
     написания двухбуквенного обозначения дня недели по-русски (например: ПН, ЧТ,
     ПТ, СБ);
 
+![1](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Time.jpg)
+
 -   из-за сокращения длины написания дня недели по-русски появилась возможность
     добавить рядом секунды;
 
@@ -22,10 +24,19 @@
     крупного отображения значений следующих показателей: время – содержание СО2
     – температура – давление;
 
+![2](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136co2.jpg)
+![3](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136temp.jpg)
+![4](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136mmhg.jpg)
+![5](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136h.jpg)
+![6](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Time.jpg)
+
 -   на главном экране удержанием кнопки переключается режим большие цифры/очень
     большие цифры – работает только для LCD 2004. В режиме четырехстрочных цифр
     некоторые данные не выводятся, т.к. просто нет места (прогноз дождя,
     влажность)
+
+![7](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136BigTime.jpg)
+![8](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136BigTemp.jpg)
 
 -   на графических экранах при минимальных значениях были пропуски в графике.
     Добавил минимально отображаемое значения, чтобы график выглядел цельным.
@@ -35,6 +46,9 @@
     минимумом за период (т.е. более наглядное графическое изменение
     показателей). При этом с правой стороны графика появляются стрелочки
     (вовнутрь и наружу соответственно) в качестве индикации режима;
+
+![9](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Grafco2max.jpg)
+![10](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Grafco2.jpg)
 
 -   мелкие изменения, не влияющие на функциональность (например, на графике
     температуры за обозначением «t» поставил значок градуса и пр…)
@@ -49,6 +63,8 @@
 Меню сохранения вызывается тройным нажатием на кнопку, затем одинарным нажатием
 выбирается ДА или НЕТ и длинным нажатием применяется. Все настройки сохраняются
 в энергонезависимой памяти ардуинки, поэтому потеря питания теперь не страшна.
+
+![11](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/137save.jpg)
 
 поправлен баг наложения элементов часов (времени) на температуру, если она была
 выбрана основной.
