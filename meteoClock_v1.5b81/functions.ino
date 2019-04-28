@@ -85,10 +85,6 @@ void modesTick() {
 #endif
       if (mode0scr > 4) mode0scr = 0;         // Переключение рехима работы главного экрана (с)НР
     }
-    else if (mode == 255 && podMode > 4) {
-      podMode = 1;
-    }
-    
     changeFlag = true;
   }
 

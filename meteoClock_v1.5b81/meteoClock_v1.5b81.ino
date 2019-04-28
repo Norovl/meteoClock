@@ -822,7 +822,7 @@ void setLED(byte color) {
 
   if (LED_BRIGHT < 11) {                                     // если ручные установки яркости
     LED_ON = 255 / 100 * LED_BRIGHT * LED_BRIGHT;
-   // if (color == 3 && BLUE_YELLOW) LED_ON = LED_ON / 2;      // Снижаем зеленый, чтобы был больше похож на желтый (с)НР
+    // if (color == 3 && BLUE_YELLOW) LED_ON = LED_ON / 2;      // Снижаем зеленый, чтобы был больше похож на желтый (с)НР
   } else {
     LED_ON = LED_BRIGHT_MAX;
   }
@@ -928,8 +928,6 @@ void setup() {
   if (status) {
     lcd.print(F("All good"));
     Serial.println(F("All good"));
-    delay(1000);
-    lcd.clear();
   } else {
     lcd.print(F("Check wires!"));
     Serial.println(F("Check wires!"));
@@ -975,6 +973,7 @@ void setup() {
 
   if (DISPLAY_TYPE == 1) {
     loadClock();
+    drawClock(hrs, mins, 0, 0, 1);
     drawData();
   }
   readSensors();
