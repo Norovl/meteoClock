@@ -180,7 +180,7 @@ byte time_array[6];
 
 // символы
 // график
-byte rowS[8] = {0b00000,  0b00000,  0b00000,  0b00000,  0b10001,  0b01010,  0b00100,  0b00000}; // стрелка вниз (с)НР
+byte rowS[8] = {0b00000,  0b00000,  0b00000,  0b00000,  0b10001,  0b01010,  0b00100,  0b00000};   // стрелка вниз (с)НР
 byte row7[8] = {0b00000,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111};
 byte row6[8] = {0b00000,  0b00000,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111};
 byte row5[8] = {0b00000,  0b00000,  0b00000,  0b11111,  0b11111,  0b11111,  0b11111,  0b11111};
@@ -245,7 +245,7 @@ uint8_t DC1[8] = {0b01110,  0b11111,  0b10001,  0b10001,  0b10001,  0b10001,  0b
 uint8_t DC0[8] = {0b01110,  0b11111,  0b10001,  0b10001,  0b10001,  0b10001,  0b10001,  0b11111};
 
 void drawDig(byte dig, byte x, byte y) {  // рисуем цифры времени (сделал цифры "квадратными" (с)НР)
-  lcd.setCursor(x, y);  // чистим (с)НР
+  lcd.setCursor(x, y);        // чистим (с)НР
   String clr = "   ";
   if (x <= 11) clr = "    ";
   lcd.print(clr);
@@ -256,9 +256,9 @@ void drawDig(byte dig, byte x, byte y) {  // рисуем цифры време�
     lcd.print(clr);
     lcd.setCursor(x, y + 3);
     lcd.print(clr);
-    switch (dig) {   // четырехстрочные цифры
+    switch (dig) {            // четырехстрочные цифры
       case 0:
-        lcd.setCursor(x, y); // set cursor to column 0, line 0 (first row)
+        lcd.setCursor(x, y);  // set cursor to column 0, line 0 (first row)
         lcd.write(255);
         lcd.write(0);
         lcd.write(255);
@@ -426,13 +426,13 @@ void drawDig(byte dig, byte x, byte y) {  // рисуем цифры време�
   else {
     switch (dig) {
       case 0:
-        lcd.setCursor(x, y); // set cursor to column 0, line 0 (first row)
-        lcd.write(255);  // call each segment to create
-        lcd.write(1);  // top half of the number
+        lcd.setCursor(x, y);  // set cursor to column 0, line 0 (first row)
+        lcd.write(255);       // call each segment to create
+        lcd.write(1);         // top half of the number
         lcd.write(255);
         lcd.setCursor(x, y + 1); // set cursor to colum 0, line 1 (second row)
-        lcd.write(255);  // call each segment to create
-        lcd.write(2);  // bottom half of the number
+        lcd.write(255);       // call each segment to create
+        lcd.write(2);         // bottom half of the number
         lcd.write(255);
         break;
       case 1:
@@ -525,7 +525,7 @@ void drawDig(byte dig, byte x, byte y) {  // рисуем цифры време�
 
 void drawdots(byte x, byte y, boolean state) {  // Точки и статус питания (с)НР
 
-  if (!bigDig && powerStatus != 255) {                            // отображаем статус питания (с)НР
+  if (!bigDig && powerStatus != 255) {          // отображаем статус питания (с)НР
 
     if (analogRead(A1) > 900 || analogRead(A0) < 300 || (analogRead(A1) < 300 && analogRead(A0) < 300)) powerStatus = 0;
     else powerStatus = (constrain((int)analogRead(A0) * 5.2 / 1023.0, 3.0, 4.2) - 3.0) / ((4.2 - 3.0) / 6.0) + 1;
@@ -614,7 +614,7 @@ void drawTemp(float dispTemp, byte x, byte y) { // Температура кру
     lcd.write(0B10100001);    // десятичная точка
   }
   lcd.setCursor(x + 13, y);
-  lcd.write(223);           // градусы
+  lcd.write(223);             // градусы
 }
 
 void drawHum(int dispHum, byte x, byte y) {   // Влажность крупно на главном экране (с)НР ----------------------------
@@ -696,7 +696,7 @@ void drawData() {
       if  (dayofweek == 1 || dayofweek == 5 || dayofweek == 4) { // Рисуем букву "П" для понедельника и пятницы, букву "Ч" для четверга (с)НР
         lcd.setCursor(18, 1);
         lcd.write(7);
-      }   else if (dayofweek == 6)  {         // Рисуем букву "Б" для субботы (с)НР
+      }   else if (dayofweek == 6)  {    // Рисуем букву "Б" для субботы (с)НР
         lcd.setCursor(19, 1);
         lcd.write(7);
       }

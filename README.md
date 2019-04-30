@@ -12,7 +12,7 @@
     написания двухбуквенного обозначения дня недели по-русски (например: ПН, ЧТ,
     ПТ, СБ);
 
-![1](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Time.jpg)
+![1](https://github.com/Norovl/meteoClock/blob/master/media/136Time.jpg)
 
 -   из-за сокращения длины написания дня недели по-русски появилась возможность
     добавить рядом секунды;
@@ -24,19 +24,19 @@
     крупного отображения значений следующих показателей: время – содержание СО2
     – температура – давление;
 
-![2](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136co2.jpg)
-![3](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136temp.jpg)
-![4](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136mmhg.jpg)
-![5](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136h.jpg)
-![6](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Time.jpg)
+![2](https://github.com/Norovl/meteoClock/blob/master/media/136co2.jpg)
+![3](https://github.com/Norovl/meteoClock/blob/master/media/136temp.jpg)
+![4](https://github.com/Norovl/meteoClock/blob/master/media/136mmhg.jpg)
+![5](https://github.com/Norovl/meteoClock/blob/master/media/136h.jpg)
+![6](https://github.com/Norovl/meteoClock/blob/master/media/136Time.jpg)
 
 -   на главном экране удержанием кнопки переключается режим большие цифры/очень
     большие цифры – работает только для LCD 2004. В режиме четырехстрочных цифр
     некоторые данные не выводятся, т.к. просто нет места (прогноз дождя,
     влажность)
 
-![7](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136BigTime.jpg)
-![8](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136BigTemp.jpg)
+![7](https://github.com/Norovl/meteoClock/blob/master/media/136BigTime.jpg)
+![8](https://github.com/Norovl/meteoClock/blob/master/media/136BigTemp.jpg)
 
 -   на графических экранах при минимальных значениях были пропуски в графике.
     Добавил минимально отображаемое значения, чтобы график выглядел цельным.
@@ -47,8 +47,8 @@
     показателей). При этом с правой стороны графика появляются стрелочки
     (вовнутрь и наружу соответственно) в качестве индикации режима;
 
-![9](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Grafco2max.jpg)
-![10](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/136Grafco2.jpg)
+![9](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2max.jpg)
+![10](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2.jpg)
 
 -   мелкие изменения, не влияющие на функциональность (например, на графике
     температуры за обозначением «t» поставил значок градуса и пр…)
@@ -64,7 +64,7 @@
 выбирается ДА или НЕТ и длинным нажатием применяется. Все настройки сохраняются
 в энергонезависимой памяти ардуинки, поэтому потеря питания теперь не страшна.
 
-![11](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/137save.jpg)
+![11](https://github.com/Norovl/meteoClock/blob/master/media/137save.jpg)
 
 поправлен баг наложения элементов часов (времени) на температуру, если она была
 выбрана основной.
@@ -76,36 +76,36 @@
 Изменения в меню (вызывается тройным нажатием кнопки в главном окне):
 
 -   Добавлен пункт меню «Выход», чтобы можно было выйти не сохраняя значения в
-    энергонезависимую память (однако выбранные параметры будут использоваться до
-    перезагрузки устройства)
+    энергонезависимую память (однако выбранные параметры будут использоваться 
+    до перезагрузки устройства)
 
 -   Убрано подтверждение сохранения, теперь сохраняется сразу при удержании
     кнопки на меню «Сохранить»
 
-![Сохранение настроек](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158Save.jpg)
+![Сохранение настроек](https://github.com/Norovl/meteoClock/blob/master/media/158Save.jpg)
 
 -   Добавлена настройка выбора яркости индикатора (0% - 100%, АВТО) и экрана 
-    (0% - 100%, АВТО, но для регулировки экрана необходима доработка схемы 
-    под версию 1.5 Алекса).
+    (0% - 100%, АВТО, но для регулировки яркости экрана необходима доработка
+    схемы под версию 1.5 Алекса).
 
-![Настройка яркости индикатора](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LEDBright.jpg)
-![Настройка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LCDBright.jpg)
-![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158LCDBright10.jpg)
+![Настройка яркости индикатора](https://github.com/Norovl/meteoClock/blob/master/media/158LEDBright.jpg)
+![Настройка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright.jpg)
+![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright10.jpg)
 
 -   Добавлена возможность настройки отображения и скрытия графиков при их
     последовательном переборе.
 
-![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158GrafOff.jpg)
-![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158GrafOn.jpg)
+![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOff.jpg)
+![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOn.jpg)
 
 -   Добавлена возможность работы от аккумулятора 18650 с индикацией остатка
     заряда. Так же есть индикатор работы от сети. Необходима доработка схемы –
     см. рисунок ниже.
 
-![Работа от батареи](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158battery.jpg)
-![Работа от внешнего источника (сети)](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/158DC.jpg)
+![Работа от батареи](https://github.com/Norovl/meteoClock/blob/master/media/158battery.jpg)
+![Работа от внешнего источника (сети)](https://github.com/Norovl/meteoClock/blob/master/media/158DC.jpg)
 
-![Доработка схемы для работы от батареи](https://github.com/Norovl/meteoClock/blob/master/ScreenPhoto/scheme1.jpg)
+![Доработка схемы для работы от батареи](https://github.com/Norovl/meteoClock/blob/master/media/scheme1.jpg)
 
 ### v1.5b82
 
