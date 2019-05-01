@@ -824,7 +824,7 @@ void setLED(byte color) {
   if (LED_BRIGHT < 11) {                                     // если ручные установки яркости
     LED_ON = 255 / 100 * LED_BRIGHT * LED_BRIGHT;
   } else {
-    LED_ON = LED_BRIGHT_MAX;
+    checkBrightness();
   }
 
   if (LED_MODE != 0) LED_ON = 255 - LED_ON;

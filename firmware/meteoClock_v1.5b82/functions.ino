@@ -34,7 +34,7 @@ void modesTick() {
 
     if (mode >= 240) {
       switch (mode) {
-        case 252:         // Перебираем все варианты яркости LCD экрана (с)НР
+        case 252:         // Перебираем все варианты яркости LCD индикатора (с)НР
           podMode++;
           if (podMode > 11) podMode = 0;
           LCD_BRIGHT = podMode;
@@ -79,7 +79,7 @@ void modesTick() {
 #if (CO2_SENSOR == 0 && mode0scr == 1)
       mode0scr++;
 #endif
-      if (mode0scr > 4) mode0scr = 0;        // Переключение рехима работы главного экрана (с)НР
+      if (mode0scr > 4) mode0scr = 0;         // Переключение рехима работы главного экрана (с)НР
     } else if (mode > 240) podMode = 1;      // Переключение на меню сохранения (с)НР
     changeFlag = true;
   }
@@ -413,7 +413,7 @@ void clockTick() {
       secs = 0;
       mins++;
       if (mins <= 59 && mode == 0) {
-        drawSensors();    // (с)НР
+        drawSensors();       // (с)НР
       }
     }
     if (mins > 59) {      // каждый час
