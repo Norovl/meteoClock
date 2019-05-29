@@ -25,6 +25,9 @@
 ![г8](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_time.jpg)
 ![г9](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_temp.jpg)
 
+Гарафики динамики изменения показаний за час и за день вызываются одиночным 
+нажатием на кнопку.
+
 -   на графических экранах двойным нажатием на кнопку переключаются макс/мин
     пределы между указанными значениями в прошивке и фактическим максимумом и
     минимумом за период (т.е. более наглядное графическое представление
@@ -33,6 +36,8 @@
 
 ![9](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2max.jpg)
 ![10](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2.jpg)
+![1602 график температуры](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_graft.jpg)
+![1602 график прогноза](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_grafrain.jpg)
 
 -   создано меню для тонкой настройки и сохранения выбранных параментров.
     Вызывается тройным нажатием на кнопку. Переход по меню - одинарное
@@ -60,18 +65,20 @@
 ![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright10.jpg)
 		
 		режим индикатора (привязка к показаниям датчика)
-![2004 настройка реж.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregind.jpg)
 			- СО2
 			- влажность
-![2004 настройка реж.индикатора2](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregindhum.jpg)
 			- температура
+![2004 настройка реж.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregind.jpg)
+![2004 настройка реж.индикатора2](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregindhum.jpg)
 		
 		настройки графиков СО2 час (вкл/выкл)
 ![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOn.jpg)
+
 		настройки графиков СО2 день (вкл/выкл)
 		настройки графиков влажность час (вкл/выкл)
 		настройки графиков влажность день (вкл/выкл)
 ![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOff.jpg)
+
 		настройки графиков температура час (вкл/выкл)
 		настройки графиков температура день (вкл/выкл)
 		настройки графиков p,rain час (вкл/выкл)
