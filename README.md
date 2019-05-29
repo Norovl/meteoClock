@@ -226,6 +226,7 @@
     индикатора к датчикам СО2, температуры и влажности (прогноз осадков 
     пока не привязан). Пределы значений датчиков для изменения цвета
     индикатора находятся в заголовке скетча.
+
 ![2004 настройка реж.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregind.jpg)
 ![2004 настройка реж.индикатора2](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregindhum.jpg)
 
@@ -237,22 +238,26 @@
     течение 10 секунд, затем происходит переход в рабочий режим.
 
 Расширена поддержка экранов 1602: 
+
 ![1602 главный экран](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_main.jpg)
 
 -   добавлен режим крупных цифр с отображением времени, СО2, температуры,
     давления, влажности. Переключиться в этот режим и обратно можно
     удержанием кнопки на главном экране. Переключение датчиков производится
     двойным нажатием на кнопку.
+
 ![1602 крупное время](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_time.jpg)
 ![1602 крупная температура](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_temp.jpg)
 
 -   добавлена возможность отображения графиков как и на большом экране.
     Переключение по графикам производится одинарным нажатием на кнопку.
+
 ![1602 график температуры](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_graft.jpg)
 ![1602 график прогноза](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_grafrain.jpg)
 
 -   теперь меню доступно и на малом экране. Вызывается тройным нажатием
     на кнопку.
+
 ![1602 настройка ярк.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrind.jpg)
 ![1602 настройка ярк.экрана](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrLCD.jpg)
 ![1602 настройка график СО2 вкл/выкл](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_onoffgrafco2.jpg)
