@@ -1,10 +1,105 @@
 ﻿# meteoClock
 
-Это доработка прошивки AlexGyver под метеостанцию.
+Это лубоко переработанная прошивки AlexGyver под метеостанцию.
 (Оригинал здесь: ![Исходная версия](https://github.com/AlexGyver/MeteoClock))
 
-Чуток доработал прошивку под экран 2004 (1602 не проверял, но старался оставить
-все как было, т.к. тестировать не на чем). Что изменилось:
+##Краткие характеристики:
+
+-   Двойным нажатием на кнопку переключаются режимы крупного отображения
+    значений следующих показателей: время – содержание СО2 – температура
+    – давление - влажность. Для экрана 1602 работает только в режиме 
+    крупных цифр (см.ниже);
+
+![г1](https://github.com/Norovl/meteoClock/blob/master/media/136Time.jpg)
+![г2](https://github.com/Norovl/meteoClock/blob/master/media/136co2.jpg)
+![г3](https://github.com/Norovl/meteoClock/blob/master/media/136temp.jpg)
+![г4](https://github.com/Norovl/meteoClock/blob/master/media/136mmhg.jpg)
+![г5](https://github.com/Norovl/meteoClock/blob/master/media/136h.jpg)
+
+-   удержанием кнопки переключается режим большие цифры/очень большие
+    цифры (для экрана 2004), или просто переключается на большие цифры
+    (для экрана 1602)
+
+![г6](https://github.com/Norovl/meteoClock/blob/master/media/136BigTime.jpg)
+![г7](https://github.com/Norovl/meteoClock/blob/master/media/136BigTemp.jpg)
+![г8](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_time.jpg)
+![г9](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_temp.jpg)
+
+-   на графических экранах двойным нажатием на кнопку переключаются макс/мин
+    пределы между указанными значениями в прошивке и фактическим максимумом и
+    минимумом за период (т.е. более наглядное графическое представление
+    показателей). При этом с правой стороны графика появляются стрелочки
+    (вовнутрь и наружу соответственно) в качестве индикации режима;
+
+![9](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2max.jpg)
+![10](https://github.com/Norovl/meteoClock/blob/master/media/136Grafco2.jpg)
+
+-   создано меню для тонкой настройки и сохранения выбранных параментров.
+    Вызывается тройным нажатием на кнопку. Переход по меню - одинарное
+    нажатие, выбор параметра - удержание кнопки.
+	
+	Структура меню настроек следующая:
+
+		яркость индикатора
+			- 0%
+			- 10%
+			- 20%
+			...
+			- 100%
+			- АВТО
+![Настройка яркости индикатора](https://github.com/Norovl/meteoClock/blob/master/media/158LEDBright.jpg)
+
+		яркость экрана
+			- 0%
+			- 10%
+			- 20%
+			...
+			- 100%
+			- АВТО
+![Настройка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright.jpg)
+![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright10.jpg)
+		
+		режим индикатора (привязка к показаниям датчика)
+![2004 настройка реж.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregind.jpg)
+			- СО2
+			- влажность
+![2004 настройка реж.индикатора2](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregindhum.jpg)
+			- температура
+		
+		настройки графиков СО2 час (вкл/выкл)
+![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOn.jpg)
+		настройки графиков СО2 день (вкл/выкл)
+		настройки графиков влажность час (вкл/выкл)
+		настройки графиков влажность день (вкл/выкл)
+![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOff.jpg)
+		настройки графиков температура час (вкл/выкл)
+		настройки графиков температура день (вкл/выкл)
+		настройки графиков p,rain час (вкл/выкл)
+		настройки графиков p,rain день (вкл/выкл)		
+		
+		сохранить
+![Сохранение настроек](https://github.com/Norovl/meteoClock/blob/master/media/158Save.jpg)
+	
+		выход
+
+В заголовке скетча можно установить пределы значений датчиков, при которых
+индикатор будет менять свет. Так же задается предел для мигания индикатора.
+
+Сохранение производится в энергонезависимую память, поэтому при следующем
+включении все настройки восстановятся.
+
+-   есть возможность работы от аккумулятора 18650 с индикацией остатка
+    заряда. Так же отображается индикатор работы от сети. Необходима 
+    доработка схемы – см. рисунок ниже.
+
+![Работа от батареи](https://github.com/Norovl/meteoClock/blob/master/media/158battery.jpg)
+![Работа от внешнего источника (сети)](https://github.com/Norovl/meteoClock/blob/master/media/158DC.jpg)
+
+![Доработка схемы для работы от батареи](https://github.com/Norovl/meteoClock/blob/master/media/scheme1.jpg)
+
+
+
+История изменений:
 
 ## v1.3b6
 
@@ -124,6 +219,8 @@
     индикатора к датчикам СО2, температуры и влажности (прогноз осадков 
     пока не привязан). Пределы значений датчиков для изменения цвета
     индикатора находятся в заголовке скетча.
+![2004 настройка реж.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregind.jpg)
+![2004 настройка реж.индикатора2](https://github.com/Norovl/meteoClock/blob/master/media/15c21_2004_setregindhum.jpg)
 
 -   оптимизирован код для экономии памяти.
 
@@ -133,15 +230,23 @@
     течение 10 секунд, затем происходит переход в рабочий режим.
 
 Расширена поддержка экранов 1602: 
+![1602 главный экран](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_main.jpg)
 
 -   добавлен режим крупных цифр с отображением времени, СО2, температуры,
     давления, влажности. Переключиться в этот режим и обратно можно
     удержанием кнопки на главном экране. Переключение датчиков производится
     двойным нажатием на кнопку.
+![1602 крупное время](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_time.jpg)
+![1602 крупная температура](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_temp.jpg)
 
 -   добавлена возможность отображения графиков как и на большом экране.
     Переключение по графикам производится одинарным нажатием на кнопку.
+![1602 график температуры](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_graft.jpg)
+![1602 график прогноза](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_grafrain.jpg)
 
 -   теперь меню доступно и на малом экране. Вызывается тройным нажатием
     на кнопку.
-
+![1602 настройка ярк.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrind.jpg)
+![1602 настройка ярк.экрана](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrLCD.jpg)
+![1602 настройка график СО2 вкл/выкл](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_onoffgrafco2.jpg)
+![1602 настройка график влажности вкл/выкл](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_onoffgrafhum.jpg)
