@@ -53,6 +53,7 @@
 			- 100%
 			- АВТО
 ![Настройка яркости индикатора](https://github.com/Norovl/meteoClock/blob/master/media/158LEDBright.jpg)
+![1602 настройка ярк.индикатора](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrind.jpg)
 
 		яркость экрана
 			- 0%
@@ -63,6 +64,7 @@
 			- АВТО
 ![Настройка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright.jpg)
 ![Установка яркости дисплея](https://github.com/Norovl/meteoClock/blob/master/media/158LCDBright10.jpg)
+![1602 настройка ярк.экрана](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_setbrLCD.jpg)
 		
 		режим индикатора (привязка к показаниям датчика)
 			- СО2
@@ -73,11 +75,13 @@
 		
 		настройки графиков СО2 час (вкл/выкл)
 ![Включение отображения графика уровня СО2 за час](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOn.jpg)
+![1602 настройка график СО2 вкл/выкл](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_onoffgrafco2.jpg)
 
 		настройки графиков СО2 день (вкл/выкл)
 		настройки графиков влажность час (вкл/выкл)
 		настройки графиков влажность день (вкл/выкл)
 ![Отключение отображения влажности за сутки](https://github.com/Norovl/meteoClock/blob/master/media/158GrafOff.jpg)
+![1602 настройка график влажности вкл/выкл](https://github.com/Norovl/meteoClock/blob/master/media/15c21_1602_onoffgrafhum.jpg)
 
 		настройки графиков температура час (вкл/выкл)
 		настройки графиков температура день (вкл/выкл)
